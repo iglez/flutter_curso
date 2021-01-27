@@ -150,3 +150,41 @@ void main() {
 String saludar({String nombre, String texto}) => '$texto $nombre';
 
 ```
+
+## Clases
+
+```
+void main() {
+  // Clases
+  
+  Heroe wolverine = Heroe(nombre:'Logan', poder:'regeneracion');
+  
+//   wolverine.nombre = 'Logan';
+//   wolverine.poder = 'regeneracion';
+  
+  print( wolverine );
+  // print( wolverine.nombre );
+}
+
+
+class Heroe {
+
+  String nombre;
+  String poder;
+  
+//   Heroe(String nombre, String poder) {
+//     this.nombre = nombre;
+//     this.poder = poder;
+//   }
+  
+  
+//   Heroe({String nombre, String poder}) {
+//     this.nombre = nombre;
+//     this.poder = poder;
+//   }
+  
+  Heroe({this.nombre, this.poder});
+  
+  String toString() => '$nombre con poder de $poder';
+ 
+}```
