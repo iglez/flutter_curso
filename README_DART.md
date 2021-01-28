@@ -187,7 +187,8 @@ class Heroe {
   
   String toString() => '$nombre con poder de $poder';
  
-}```
+}
+```
 
 
 ### Constructores con nombre
